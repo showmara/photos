@@ -1,0 +1,22 @@
+PODS:
+  - JVFloatLabeledTextField (1.1.0)
+  - MBProgressHUD (0.9.2)
+  - RKTabView (1.0.3)
+  - VIMVideoPlayer (6.0.0)
+  - ZLSwipeableView (0.0.8)
+
+DEPENDENCIES:
+  - JVFloatLabeledTextField
+  - MBProgressHUD (~> 0.9.2)
+  - RKTabView (~> 1.0.0)
+  - VIMVideoPlayer (~> 6.0.0)
+  - ZLSwipeableView
+
+SPEC CHECKSUMS:
+  JVFloatLabeledTextField: ea4a3d8387ddd43724c472bb2b8ab39b79af05d4
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  RKTabView: 3aa17084d85e71715abbb5330fab76b24a272c6e
+  VIMVideoPlayer: e132b14b91e79267803b734f933f6138702afa0b
+  ZLSwipeableView: df385760ff4838935cdbcb62878ac5acd7355949
+
+COCOAPODS: 0.39.0

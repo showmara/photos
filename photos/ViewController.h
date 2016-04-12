@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "LzServiceSvc.h"
+#import <ZLSwipeableView.h>
+#import <RKTabView.h>
+#import "CardView.h"
+#import <MBProgressHUD.h>
+@interface ViewController : UIViewController <LzServiceHttpBindingResponseDelegate,NSXMLParserDelegate,ZLSwipeableViewDataSource, ZLSwipeableViewDelegate,RKTabViewDelegate,clickDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@property (nonatomic, strong) ZLSwipeableView *swipeableView;
+@property MBProgressHUD* hud;
+- (UIView *)nextViewForSwipeableView:(ZLSwipeableView *)swipeableView;
 
 @end
 

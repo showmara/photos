@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="TOa-Pd-Kkv">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="111" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview.png" translatesAutoresizingMaskIntoConstraints="NO" id="erj-F9-xRB">
+                    <rect key="frame" x="-26.5" y="44" width="372" height="192"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlM-Rj-TOG">
+                    <rect key="frame" x="80" y="0.0" width="160" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMh-4Y-9kU">
+                    <rect key="frame" x="0.0" y="337" width="320" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="filesize" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu8-jh-ARA">
+                    <rect key="frame" x="0.0" y="401" width="320" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bgcolor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqT-dS-w2I">
+                    <rect key="frame" x="0.0" y="433" width="320" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pixel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeh-G3-1H4">
+                    <rect key="frame" x="0.0" y="369" width="320" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TOa-Pd-Kkv" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="8n0-xW-0JO"/>
+                <constraint firstItem="ZlM-Rj-TOG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AE3-af-Gg8"/>
+                <constraint firstItem="ZlM-Rj-TOG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="CTf-De-BTa"/>
+                <constraint firstItem="yMh-4Y-9kU" firstAttribute="leading" secondItem="zeh-G3-1H4" secondAttribute="leading" id="Cbl-Rj-r7O"/>
+                <constraint firstItem="Vu8-jh-ARA" firstAttribute="leading" secondItem="zqT-dS-w2I" secondAttribute="leading" id="I4S-LQ-E6y"/>
+                <constraint firstItem="yMh-4Y-9kU" firstAttribute="width" secondItem="zeh-G3-1H4" secondAttribute="width" id="KoL-Bb-wd1"/>
+                <constraint firstItem="ZlM-Rj-TOG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="M38-lr-nHL"/>
+                <constraint firstItem="Vu8-jh-ARA" firstAttribute="width" secondItem="zqT-dS-w2I" secondAttribute="width" id="Pni-dI-bcW"/>
+                <constraint firstItem="TOa-Pd-Kkv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S6I-5L-OvX"/>
+                <constraint firstItem="zeh-G3-1H4" firstAttribute="top" secondItem="yMh-4Y-9kU" secondAttribute="bottom" constant="15" id="SDb-oe-5Zf"/>
+                <constraint firstItem="zeh-G3-1H4" firstAttribute="width" secondItem="Vu8-jh-ARA" secondAttribute="width" id="Tjq-mb-8G7"/>
+                <constraint firstItem="erj-F9-xRB" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.4" id="ZWs-k6-mRg"/>
+                <constraint firstItem="zqT-dS-w2I" firstAttribute="centerX" secondItem="TOa-Pd-Kkv" secondAttribute="centerX" id="aPr-Z6-5wL"/>
+                <constraint firstItem="TOa-Pd-Kkv" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="atx-qW-3ZV"/>
+                <constraint firstItem="zqT-dS-w2I" firstAttribute="width" secondItem="TOa-Pd-Kkv" secondAttribute="width" id="bou-Ug-O3H"/>
+                <constraint firstItem="ZlM-Rj-TOG" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.05" id="lGh-9a-eY1"/>
+                <constraint firstItem="zqT-dS-w2I" firstAttribute="top" secondItem="Vu8-jh-ARA" secondAttribute="bottom" constant="15" id="nNM-Ml-wBO"/>
+                <constraint firstItem="zeh-G3-1H4" firstAttribute="leading" secondItem="Vu8-jh-ARA" secondAttribute="leading" id="nqV-cB-FGb"/>
+                <constraint firstItem="zqT-dS-w2I" firstAttribute="bottom" secondItem="TOa-Pd-Kkv" secondAttribute="bottom" constant="-30" id="qM8-w1-1Bi"/>
+                <constraint firstItem="erj-F9-xRB" firstAttribute="top" secondItem="ZlM-Rj-TOG" secondAttribute="bottom" constant="20" id="tdS-pY-4df"/>
+                <constraint firstItem="erj-F9-xRB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vUM-ug-5D3"/>
+                <constraint firstItem="Vu8-jh-ARA" firstAttribute="top" secondItem="zeh-G3-1H4" secondAttribute="bottom" constant="15" id="vfj-RO-Zb2"/>
+                <constraint firstAttribute="bottom" secondItem="TOa-Pd-Kkv" secondAttribute="bottom" id="wKI-OF-14r"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="420" y="489"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CardBack.png" width="593" height="1013"/>
+        <image name="preview.png" width="372" height="510"/>
+    </resources>
+</document>

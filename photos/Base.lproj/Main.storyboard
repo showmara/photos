@@ -1,25 +1,350 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--My Status View Controller-->
+        <scene sceneID="gz0-SY-auy">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="statusStoryboard" id="mSw-bm-5zx" customClass="MyStatusViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="R4F-eQ-ANF"/>
+                        <viewControllerLayoutGuide type="bottom" id="b7t-oH-aXS"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="CIm-ue-BGb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1215686275" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOG-6P-aKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="928.5" y="-521.5"/>
+        </scene>
+        <!--Info Comfirm View Controller-->
+        <scene sceneID="sUa-dn-Wnl">
+            <objects>
+                <viewController storyboardIdentifier="infoComfirm" id="4AV-Nv-Pb0" customClass="InfoComfirmViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F9u-TA-7n6"/>
+                        <viewControllerLayoutGuide type="bottom" id="P4H-Jh-mXm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lXS-ZW-0H1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ERB-tv-4QM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02.png" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-sn-J9N">
+                                <rect key="frame" x="94" y="84" width="188" height="240"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="姓名" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="textBackground.png" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wlk-0d-ivH" customClass="LeftViewTextField">
+                                <rect key="frame" x="94" y="353" width="188" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="name.png"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="身份证号" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="textBackground.png" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rC3-bF-U4W" customClass="LeftViewTextField">
+                                <rect key="frame" x="94" y="414" width="188" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="IDNumber.png"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5B-0E-QSS">
+                                <rect key="frame" x="94" y="595" width="188" height="40"/>
+                                <state key="normal" title="提交" backgroundImage="regButtonNormal.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RRI-sn-J9N" firstAttribute="width" secondItem="lXS-ZW-0H1" secondAttribute="width" multiplier="0.5" id="3m0-jG-amr"/>
+                            <constraint firstItem="RRI-sn-J9N" firstAttribute="centerX" secondItem="lXS-ZW-0H1" secondAttribute="centerX" id="4jX-O6-2cH"/>
+                            <constraint firstItem="M5B-0E-QSS" firstAttribute="centerX" secondItem="lXS-ZW-0H1" secondAttribute="centerX" id="9UH-DL-Chj"/>
+                            <constraint firstItem="M5B-0E-QSS" firstAttribute="height" secondItem="ERB-tv-4QM" secondAttribute="height" multiplier="0.06" id="Emx-gK-WQV"/>
+                            <constraint firstItem="wlk-0d-ivH" firstAttribute="width" secondItem="RRI-sn-J9N" secondAttribute="width" id="GBG-eR-rpj"/>
+                            <constraint firstItem="RRI-sn-J9N" firstAttribute="height" secondItem="lXS-ZW-0H1" secondAttribute="width" multiplier="0.64" id="L4H-O2-UIJ"/>
+                            <constraint firstItem="ERB-tv-4QM" firstAttribute="centerX" secondItem="lXS-ZW-0H1" secondAttribute="centerX" id="MPg-3j-07I"/>
+                            <constraint firstItem="ERB-tv-4QM" firstAttribute="width" secondItem="lXS-ZW-0H1" secondAttribute="width" id="RJc-Db-EpO"/>
+                            <constraint firstItem="wlk-0d-ivH" firstAttribute="top" secondItem="RRI-sn-J9N" secondAttribute="bottom" constant="29" id="TAR-GR-Q3m"/>
+                            <constraint firstItem="wlk-0d-ivH" firstAttribute="height" secondItem="ERB-tv-4QM" secondAttribute="height" multiplier="0.06" id="XwP-MB-yV9"/>
+                            <constraint firstItem="rC3-bF-U4W" firstAttribute="centerX" secondItem="lXS-ZW-0H1" secondAttribute="centerX" id="YcR-ny-scm"/>
+                            <constraint firstItem="ERB-tv-4QM" firstAttribute="centerY" secondItem="lXS-ZW-0H1" secondAttribute="centerY" id="beI-4i-NX2"/>
+                            <constraint firstItem="ERB-tv-4QM" firstAttribute="height" secondItem="lXS-ZW-0H1" secondAttribute="height" id="dOe-5M-ml4"/>
+                            <constraint firstItem="wlk-0d-ivH" firstAttribute="centerX" secondItem="lXS-ZW-0H1" secondAttribute="centerX" id="eJH-6L-r2x"/>
+                            <constraint firstItem="rC3-bF-U4W" firstAttribute="height" secondItem="ERB-tv-4QM" secondAttribute="height" multiplier="0.06" id="f3k-OY-545"/>
+                            <constraint firstItem="P4H-Jh-mXm" firstAttribute="top" secondItem="M5B-0E-QSS" secondAttribute="bottom" constant="32" id="gUX-aT-hrx"/>
+                            <constraint firstItem="rC3-bF-U4W" firstAttribute="top" secondItem="wlk-0d-ivH" secondAttribute="bottom" constant="21" id="lU2-GL-N6d"/>
+                            <constraint firstItem="rC3-bF-U4W" firstAttribute="width" secondItem="RRI-sn-J9N" secondAttribute="width" id="md6-Xx-dvu"/>
+                            <constraint firstItem="M5B-0E-QSS" firstAttribute="width" secondItem="rC3-bF-U4W" secondAttribute="width" id="web-e9-Yfd"/>
+                            <constraint firstItem="RRI-sn-J9N" firstAttribute="top" secondItem="F9u-TA-7n6" secondAttribute="bottom" constant="64" id="ygS-Gw-kCD"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="IDTextView" destination="rC3-bF-U4W" id="7PP-PS-uHf"/>
+                        <outlet property="nameTextView" destination="wlk-0d-ivH" id="2W7-B0-sQU"/>
+                        <outlet property="previewImageView" destination="RRI-sn-J9N" id="Kbw-1F-raL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BlD-QW-LsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522.5" y="-230.5"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="bW2-Rf-zS6">
+            <objects>
+                <viewController storyboardIdentifier="SettingStoryBoard" id="adR-z6-Vzk" customClass="SettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="euT-fc-60u"/>
+                        <viewControllerLayoutGuide type="bottom" id="btp-bx-Bc8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jga-X2-y0s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12941176470588237" green="0.12156862745098039" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpR-ZQ-rhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613.5" y="233.5"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="UfQ-Wd-rck">
+            <objects>
+                <viewController storyboardIdentifier="loginStoryboard" id="j1V-kZ-7HD" customClass="loginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="630-f9-b2Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="sg2-ad-5VY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="irY-uh-Jwk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginback.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0BT-qr-tGR">
+                                <rect key="frame" x="-1" y="-1" width="376" height="668"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginSmallBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="tbM-xc-Adj">
+                                <rect key="frame" x="56" y="233" width="263" height="200"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="身份证号" minimumFontSize="17" background="textBackground.png" disabledBackground="regButtonNormal.png" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="U0x-O8-2gQ" customClass="LeftViewTextField">
+                                <rect key="frame" x="82" y="252" width="210" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="manIcon.png"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" background="textBackground.png" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ptx-zi-ki6" customClass="LeftViewTextField">
+                                <rect key="frame" x="82" y="305" width="211" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="passwordIcon.png"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3F-0R-cpF">
+                                <rect key="frame" x="82" y="353" width="100" height="40"/>
+                                <state key="normal" title="登录" backgroundImage="loginButtonNormal.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5b-YW-58f">
+                                <rect key="frame" x="192" y="353" width="100" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="用户注册" backgroundImage="regNormal.png"/>
+                                <connections>
+                                    <action selector="register:" destination="j1V-kZ-7HD" eventType="touchUpInside" id="nr5-vy-15s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0BT-qr-tGR" firstAttribute="centerX" secondItem="irY-uh-Jwk" secondAttribute="centerX" id="05c-47-Vli"/>
+                            <constraint firstItem="tbM-xc-Adj" firstAttribute="width" secondItem="irY-uh-Jwk" secondAttribute="width" multiplier="0.7" id="1D8-wQ-QaU"/>
+                            <constraint firstItem="ptx-zi-ki6" firstAttribute="width" secondItem="tbM-xc-Adj" secondAttribute="width" multiplier="0.8" id="2Ga-Si-du1"/>
+                            <constraint firstItem="l5b-YW-58f" firstAttribute="width" secondItem="tbM-xc-Adj" secondAttribute="width" multiplier="0.4" constant="-5" id="5Cv-mX-phF"/>
+                            <constraint firstItem="U0x-O8-2gQ" firstAttribute="leading" secondItem="ptx-zi-ki6" secondAttribute="leading" id="9pe-aZ-bNS"/>
+                            <constraint firstItem="U0x-O8-2gQ" firstAttribute="height" secondItem="tbM-xc-Adj" secondAttribute="height" multiplier="0.2" id="GHJ-Tf-5R5"/>
+                            <constraint firstItem="tbM-xc-Adj" firstAttribute="centerX" secondItem="irY-uh-Jwk" secondAttribute="centerX" id="IGM-7H-8N9"/>
+                            <constraint firstItem="l5b-YW-58f" firstAttribute="top" secondItem="g3F-0R-cpF" secondAttribute="top" id="M95-ov-piH"/>
+                            <constraint firstItem="g3F-0R-cpF" firstAttribute="height" secondItem="tbM-xc-Adj" secondAttribute="height" multiplier="0.2" id="Mzp-Ya-2PV"/>
+                            <constraint firstItem="g3F-0R-cpF" firstAttribute="width" secondItem="tbM-xc-Adj" secondAttribute="width" multiplier="0.4" constant="-5" id="NgT-E6-ZjT"/>
+                            <constraint firstItem="tbM-xc-Adj" firstAttribute="centerY" secondItem="irY-uh-Jwk" secondAttribute="centerY" id="Njl-5F-Dfs"/>
+                            <constraint firstItem="tbM-xc-Adj" firstAttribute="height" secondItem="irY-uh-Jwk" secondAttribute="height" multiplier="0.3" id="OZD-4b-WL0"/>
+                            <constraint firstItem="0BT-qr-tGR" firstAttribute="centerY" secondItem="irY-uh-Jwk" secondAttribute="centerY" id="QQ6-hm-Jvx"/>
+                            <constraint firstItem="0BT-qr-tGR" firstAttribute="height" secondItem="irY-uh-Jwk" secondAttribute="height" constant="1" id="SVM-LV-IIP"/>
+                            <constraint firstItem="l5b-YW-58f" firstAttribute="leading" secondItem="g3F-0R-cpF" secondAttribute="trailing" constant="10" id="XVl-jm-m60"/>
+                            <constraint firstItem="tbM-xc-Adj" firstAttribute="top" secondItem="U0x-O8-2gQ" secondAttribute="bottom" constant="-59" id="XrN-ja-fYg"/>
+                            <constraint firstItem="ptx-zi-ki6" firstAttribute="top" secondItem="U0x-O8-2gQ" secondAttribute="bottom" constant="13" id="bln-JP-RFp"/>
+                            <constraint firstItem="ptx-zi-ki6" firstAttribute="height" secondItem="tbM-xc-Adj" secondAttribute="height" multiplier="0.2" id="efN-gO-hKp"/>
+                            <constraint firstItem="U0x-O8-2gQ" firstAttribute="centerX" secondItem="tbM-xc-Adj" secondAttribute="centerX" id="gzR-m3-BC7"/>
+                            <constraint firstItem="U0x-O8-2gQ" firstAttribute="width" secondItem="tbM-xc-Adj" secondAttribute="width" multiplier="0.8" id="jLL-nV-SZs"/>
+                            <constraint firstItem="g3F-0R-cpF" firstAttribute="top" secondItem="ptx-zi-ki6" secondAttribute="bottom" constant="8" id="nWZ-mj-yfZ"/>
+                            <constraint firstItem="l5b-YW-58f" firstAttribute="height" secondItem="tbM-xc-Adj" secondAttribute="height" multiplier="0.2" id="pp1-rI-gaK"/>
+                            <constraint firstItem="0BT-qr-tGR" firstAttribute="width" secondItem="irY-uh-Jwk" secondAttribute="width" constant="1" id="tC7-b1-AeR"/>
+                            <constraint firstItem="g3F-0R-cpF" firstAttribute="leading" secondItem="ptx-zi-ki6" secondAttribute="leading" id="ve5-6t-VMb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="IDTextField" destination="U0x-O8-2gQ" id="yJR-XP-1vp"/>
+                        <outlet property="PasswdTextField" destination="ptx-zi-ki6" id="f2q-Du-CIA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADn-hN-9sP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="485.5" y="1101.5"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="zCN-Wp-BZn">
+            <objects>
+                <viewController storyboardIdentifier="registerStoryboard" id="BK0-bL-sQP" customClass="RegisterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kys-wF-AjI"/>
+                        <viewControllerLayoutGuide type="bottom" id="44v-qm-b57"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t8K-L0-Sf3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RegBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0bG-cu-dfY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="身份证号" textAlignment="natural" minimumFontSize="17" background="textBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZWT-h1-gqA" customClass="LeftViewTextField">
+                                <rect key="frame" x="37" y="30" width="300" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="IDNumber.png"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="姓名" textAlignment="natural" minimumFontSize="17" background="textBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="zlb-gO-KwT" customClass="LeftViewTextField">
+                                <rect key="frame" x="37" y="90" width="300" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="name.png"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="确认密码" textAlignment="natural" minimumFontSize="17" background="textBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="h1V-KF-YV2" customClass="LeftViewTextField">
+                                <rect key="frame" x="37" y="210" width="300" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="pwdConfirm.png"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" textAlignment="natural" minimumFontSize="17" background="textBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Kb-Df-nvf" customClass="LeftViewTextField">
+                                <rect key="frame" x="37" y="270" width="300" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="phoneIcon.png"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" textAlignment="natural" minimumFontSize="17" background="textBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="NPp-P1-nty" customClass="LeftViewTextField">
+                                <rect key="frame" x="37" y="330" width="300" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="email.png"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYY-cU-ebH">
+                                <rect key="frame" x="37" y="390" width="300" height="50"/>
+                                <state key="normal" title="注册" backgroundImage="regNormal.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" background="textBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Nl-r7-AFi" customClass="LeftViewTextField">
+                                <rect key="frame" x="37" y="150" width="300" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftViewImage" value="pwd.png"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZWT-h1-gqA" firstAttribute="width" secondItem="t8K-L0-Sf3" secondAttribute="width" multiplier="0.8" id="2cc-V2-vYp"/>
+                            <constraint firstItem="0bG-cu-dfY" firstAttribute="centerY" secondItem="t8K-L0-Sf3" secondAttribute="centerY" id="4vt-SO-WrQ"/>
+                            <constraint firstItem="lYY-cU-ebH" firstAttribute="width" secondItem="NPp-P1-nty" secondAttribute="width" id="7ss-bo-Z5A"/>
+                            <constraint firstItem="h1V-KF-YV2" firstAttribute="width" secondItem="7Nl-r7-AFi" secondAttribute="width" id="ADf-xQ-GvK"/>
+                            <constraint firstItem="zlb-gO-KwT" firstAttribute="width" secondItem="ZWT-h1-gqA" secondAttribute="width" id="AXt-16-zzl"/>
+                            <constraint firstItem="7Nl-r7-AFi" firstAttribute="leading" secondItem="zlb-gO-KwT" secondAttribute="leading" id="BbP-25-yU7"/>
+                            <constraint firstItem="7Nl-r7-AFi" firstAttribute="width" secondItem="zlb-gO-KwT" secondAttribute="width" id="Bdu-3S-Dcp"/>
+                            <constraint firstItem="h1V-KF-YV2" firstAttribute="top" secondItem="7Nl-r7-AFi" secondAttribute="bottom" constant="20" id="DH4-P5-ar3"/>
+                            <constraint firstItem="zlb-gO-KwT" firstAttribute="leading" secondItem="ZWT-h1-gqA" secondAttribute="leading" id="Dhz-qn-yC9"/>
+                            <constraint firstItem="NPp-P1-nty" firstAttribute="top" secondItem="6Kb-Df-nvf" secondAttribute="bottom" constant="20" id="E1f-md-a1A"/>
+                            <constraint firstItem="7Nl-r7-AFi" firstAttribute="top" secondItem="zlb-gO-KwT" secondAttribute="bottom" constant="20" id="EjP-Oy-zMZ"/>
+                            <constraint firstItem="NPp-P1-nty" firstAttribute="leading" secondItem="6Kb-Df-nvf" secondAttribute="leading" id="Ekj-qc-OH3"/>
+                            <constraint firstItem="6Kb-Df-nvf" firstAttribute="leading" secondItem="h1V-KF-YV2" secondAttribute="leading" id="Ho9-kY-Qq3"/>
+                            <constraint firstItem="0bG-cu-dfY" firstAttribute="width" secondItem="t8K-L0-Sf3" secondAttribute="width" id="Jis-WF-r9F"/>
+                            <constraint firstItem="h1V-KF-YV2" firstAttribute="leading" secondItem="7Nl-r7-AFi" secondAttribute="leading" id="K8s-K6-FG2"/>
+                            <constraint firstItem="6Kb-Df-nvf" firstAttribute="height" secondItem="ZWT-h1-gqA" secondAttribute="height" id="KDX-84-kNa"/>
+                            <constraint firstItem="0bG-cu-dfY" firstAttribute="centerX" secondItem="t8K-L0-Sf3" secondAttribute="centerX" id="Lmg-i4-Diw"/>
+                            <constraint firstItem="lYY-cU-ebH" firstAttribute="top" secondItem="NPp-P1-nty" secondAttribute="bottom" constant="20" id="Mtl-tn-mzn"/>
+                            <constraint firstItem="NPp-P1-nty" firstAttribute="height" secondItem="ZWT-h1-gqA" secondAttribute="height" id="Nl0-lk-Ffy"/>
+                            <constraint firstItem="zlb-gO-KwT" firstAttribute="top" secondItem="ZWT-h1-gqA" secondAttribute="bottom" constant="20" id="WCX-sA-luL"/>
+                            <constraint firstItem="ZWT-h1-gqA" firstAttribute="height" secondItem="0bG-cu-dfY" secondAttribute="height" multiplier="0.06" id="Wmt-RH-T3I"/>
+                            <constraint firstItem="6Kb-Df-nvf" firstAttribute="width" secondItem="h1V-KF-YV2" secondAttribute="width" id="Y75-qY-Wln"/>
+                            <constraint firstItem="6Kb-Df-nvf" firstAttribute="top" secondItem="h1V-KF-YV2" secondAttribute="bottom" constant="20" id="Yoc-Ke-RFu"/>
+                            <constraint firstItem="zlb-gO-KwT" firstAttribute="height" secondItem="ZWT-h1-gqA" secondAttribute="height" id="f0U-4b-4r0"/>
+                            <constraint firstItem="ZWT-h1-gqA" firstAttribute="top" secondItem="kys-wF-AjI" secondAttribute="bottom" constant="10" id="fex-3t-ebi"/>
+                            <constraint firstItem="h1V-KF-YV2" firstAttribute="height" secondItem="ZWT-h1-gqA" secondAttribute="height" id="is8-Pl-AvX"/>
+                            <constraint firstItem="7Nl-r7-AFi" firstAttribute="height" secondItem="ZWT-h1-gqA" secondAttribute="height" id="kK9-il-Jn6"/>
+                            <constraint firstItem="ZWT-h1-gqA" firstAttribute="centerX" secondItem="t8K-L0-Sf3" secondAttribute="centerX" id="lJS-xr-AlJ"/>
+                            <constraint firstItem="0bG-cu-dfY" firstAttribute="height" secondItem="t8K-L0-Sf3" secondAttribute="height" id="n09-mh-Ene"/>
+                            <constraint firstItem="NPp-P1-nty" firstAttribute="width" secondItem="6Kb-Df-nvf" secondAttribute="width" id="rRR-y8-1a8"/>
+                            <constraint firstItem="lYY-cU-ebH" firstAttribute="leading" secondItem="NPp-P1-nty" secondAttribute="leading" id="xqA-jQ-t2s"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ghb-2G-wbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312.5" y="1695.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="02.png" width="512" height="512"/>
+        <image name="IDNumber.png" width="34" height="20"/>
+        <image name="RegBackground.jpg" width="375" height="668"/>
+        <image name="email.png" width="34" height="20"/>
+        <image name="loginButtonNormal.png" width="192" height="77"/>
+        <image name="loginSmallBack.png" width="560" height="733"/>
+        <image name="loginback.jpg" width="750" height="1334"/>
+        <image name="mainBack.jpg" width="750" height="1334"/>
+        <image name="manIcon.png" width="29" height="29"/>
+        <image name="name.png" width="34" height="20"/>
+        <image name="passwordIcon.png" width="58" height="59"/>
+        <image name="phoneIcon.png" width="34" height="20"/>
+        <image name="pwd.png" width="34" height="20"/>
+        <image name="pwdConfirm.png" width="34" height="19"/>
+        <image name="regButtonNormal.png" width="192" height="77"/>
+        <image name="regNormal.png" width="287" height="50"/>
+        <image name="textBackground.png" width="286" height="36"/>
+    </resources>
 </document>
